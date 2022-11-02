@@ -1,8 +1,3 @@
-/* Box Model Hack */
-* {
-     box-sizing: border-box;
-}
-
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -20,23 +15,43 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+html{
+     font-size: 62.5%;
+     box-sizing: border-box;
+}
+
+*, *::before, *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: inherit;
+}
+
 
 body {
-
+     height: 100vh;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.calculator{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 400px;
+     background-color: black;
+     border: 2px solid red;
 }
 
-footer {
 
+.calc-screen{
+     width: 100%;
+     font-size: 5rem;
+     height: 80px;
+     border: none;
 }
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
