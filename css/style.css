@@ -83,3 +83,12 @@ button{
      color: white;
      font-size: 3rem;
 }
+
+button:hover{
+     background-color: rgb(17, 175, 175);
+     color:white;
+}
+
+.clear-btn:hover{
+     background-color: rgb(199, 100, 100);
+}
